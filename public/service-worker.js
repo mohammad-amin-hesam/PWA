@@ -59,7 +59,7 @@ self.addEventListener("fetch", evt => {
   // CODELAB: Add fetch event handler here.
   if (evt.request.mode !== "navigate") {
     // Not a page navigation, bail.
-    return;
+    return; 
   }
   evt.respondWith(
     fetch(evt.request).catch(() => {
